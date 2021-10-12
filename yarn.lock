@@ -1657,6 +1657,14 @@
     caller "^1.0.1"
     find-root "^1.1.0"
 
+"@tryghost/root-utils@^0.3.6":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@tryghost/root-utils/-/root-utils-0.3.6.tgz#424b012fe94f68f4c137a510a4929639e5281a3a"
+  integrity sha512-fLUKGxpiwBQ8UCpxkbhT4L4VBRha8nU1YMOnWVdRa2LQPtaZ8+Nvs9LsAm86p1Qjsdr6x5PrNwpy5HBHEdNsYA==
+  dependencies:
+    caller "^1.0.1"
+    find-root "^1.1.0"
+
 "@tryghost/security@0.2.12":
   version "0.2.12"
   resolved "https://registry.yarnpkg.com/@tryghost/security/-/security-0.2.12.tgz#73637fa47f922320289a111c48d89f78a72bf568"
@@ -1729,7 +1737,15 @@
     moment-timezone "0.5.23"
     validator "7.2.0"
 
-"@tryghost/version@0.1.4", "@tryghost/version@^0.1.4":
+"@tryghost/version@0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@tryghost/version/-/version-0.1.6.tgz#c6ccce6a3ae5c7d24c41ef5b7e1f3e46673d6cc7"
+  integrity sha512-HHU5KOM0VZTaqzmTEhRMO+wJAO3gllym4PxktoUFkIiLJZHHpBczUDbuNFSaZkOX4fJIMcU2gM7ict9b4UbmIQ==
+  dependencies:
+    "@tryghost/root-utils" "^0.3.6"
+    semver "^7.3.5"
+
+"@tryghost/version@^0.1.4":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@tryghost/version/-/version-0.1.4.tgz#d9ef66f4e3793979b4ab7196ee42ffcd8018bfd6"
   integrity sha512-52hb3FQp52fn0y+uxLwXDlB4q2NKkXbuJsZkvel3GPl+EfODhuB2mUczoUOqXIO3I6Q/CHHsW39KZf+UHmDVcA==
