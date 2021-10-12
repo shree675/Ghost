@@ -1630,14 +1630,14 @@
   dependencies:
     bluebird "^3.7.2"
 
-"@tryghost/request@0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@tryghost/request/-/request-0.1.5.tgz#49f0228a2dde49ff39dd083a84470ea888d1188e"
-  integrity sha512-zTL8KcCcDyGJBNrHK/rm19ldqIxXrDzIghXQXQjGJCOHpx9sCT8tMkKjs+TnpN4jr0Q46i+qmhCmV711EZSGig==
+"@tryghost/request@0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@tryghost/request/-/request-0.1.7.tgz#c29ef63c253d4ff68d5ae05aed996ff15e227156"
+  integrity sha512-Wj98EMIvxFDN13i2/J/6rxQS+UaFdQE3Fga7RFzMZLg2e10BOe5twfWjMB2jBcHAYb67P1LjijAEL5B3PkVAuA==
   dependencies:
     "@tryghost/errors" "^0.2.12"
-    "@tryghost/validator" "^0.1.5"
-    "@tryghost/version" "^0.1.4"
+    "@tryghost/validator" "^0.1.7"
+    "@tryghost/version" "^0.1.6"
     got "9.6.0"
     lodash "^4.17.21"
 
@@ -1653,6 +1653,14 @@
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@tryghost/root-utils/-/root-utils-0.1.0.tgz#7578cb5e57953316fef58edd43a152a86b719a8f"
   integrity sha512-zy3PSviwytjvjdMso86RYZLE2I4e2yL/s83fIEf/g17C8V8hsCcgE83cFOpCw3ISWDFX3Qi0IX9kI3or2pfGLg==
+  dependencies:
+    caller "^1.0.1"
+    find-root "^1.1.0"
+
+"@tryghost/root-utils@^0.3.6":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@tryghost/root-utils/-/root-utils-0.3.6.tgz#424b012fe94f68f4c137a510a4929639e5281a3a"
+  integrity sha512-fLUKGxpiwBQ8UCpxkbhT4L4VBRha8nU1YMOnWVdRa2LQPtaZ8+Nvs9LsAm86p1Qjsdr6x5PrNwpy5HBHEdNsYA==
   dependencies:
     caller "^1.0.1"
     find-root "^1.1.0"
@@ -1693,6 +1701,13 @@
   dependencies:
     lodash.template "^4.5.0"
 
+"@tryghost/tpl@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@tryghost/tpl/-/tpl-0.1.7.tgz#f3821c1b5a00acf04d98464794ba32df6d3c08df"
+  integrity sha512-mQjRN+m7KTIO2PCU5ywfzxg3Wt0DKeyD2ZT2QFfFhdEO0gpDrLoEHVKDJp64xiqCxROe1aQa0QEOvHEZl5vUxA==
+  dependencies:
+    lodash.template "^4.5.0"
+
 "@tryghost/update-check-service@0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@tryghost/update-check-service/-/update-check-service-0.2.3.tgz#1f47842c3e84ab40ac9b3bbae42eea592f632c29"
@@ -1718,7 +1733,7 @@
     remark-footnotes "^1.0.0"
     unist-util-visit "^2.0.0"
 
-"@tryghost/validator@0.1.5", "@tryghost/validator@^0.1.5":
+"@tryghost/validator@0.1.5":
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/@tryghost/validator/-/validator-0.1.5.tgz#ccfdb234ea951aac2e28794c0dbfa34f1d3282da"
   integrity sha512-Lzjrw2wHh2xfCmQ1kkuD5XyWWkkHUrfxeWZcKoXIj/8R+panh5X3vH8Rx9aE/FpywMb6BR/R2URG+aIDPy+16A==
@@ -1729,12 +1744,31 @@
     moment-timezone "0.5.23"
     validator "7.2.0"
 
-"@tryghost/version@0.1.4", "@tryghost/version@^0.1.4":
+"@tryghost/validator@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@tryghost/validator/-/validator-0.1.7.tgz#f370cc331fda7f086cb21848138bb4d889c3b860"
+  integrity sha512-tipaB2LeLv8IAX1TKf1GqpC6b3vZ5OspKqUcG6uUF29n9C+aoaR2gOyVSvdnmdtSOmVdV8KtHX9mYGboCWlgRg==
+  dependencies:
+    "@tryghost/errors" "^0.2.13"
+    "@tryghost/tpl" "^0.1.7"
+    lodash "^4.17.21"
+    moment-timezone "0.5.23"
+    validator "7.2.0"
+
+"@tryghost/version@0.1.4":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@tryghost/version/-/version-0.1.4.tgz#d9ef66f4e3793979b4ab7196ee42ffcd8018bfd6"
   integrity sha512-52hb3FQp52fn0y+uxLwXDlB4q2NKkXbuJsZkvel3GPl+EfODhuB2mUczoUOqXIO3I6Q/CHHsW39KZf+UHmDVcA==
   dependencies:
     "@tryghost/root-utils" "^0.3.4"
+    semver "^7.3.5"
+
+"@tryghost/version@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@tryghost/version/-/version-0.1.6.tgz#c6ccce6a3ae5c7d24c41ef5b7e1f3e46673d6cc7"
+  integrity sha512-HHU5KOM0VZTaqzmTEhRMO+wJAO3gllym4PxktoUFkIiLJZHHpBczUDbuNFSaZkOX4fJIMcU2gM7ict9b4UbmIQ==
+  dependencies:
+    "@tryghost/root-utils" "^0.3.6"
     semver "^7.3.5"
 
 "@tryghost/vhost-middleware@1.0.18":
